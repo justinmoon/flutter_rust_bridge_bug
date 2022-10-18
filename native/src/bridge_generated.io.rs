@@ -11,6 +11,11 @@ pub extern "C" fn wire_rust_release_mode(port_: i64) {
     wire_rust_release_mode_impl(port_)
 }
 
+#[no_mangle]
+pub extern "C" fn wire_hello_world(port_: i64) {
+    wire_hello_world_impl(port_)
+}
+
 // Section: allocate functions
 
 // Section: impl Wire2Api

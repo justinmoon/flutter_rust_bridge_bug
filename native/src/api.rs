@@ -57,3 +57,7 @@ pub fn platform() -> Platform {
 pub fn rust_release_mode() -> bool {
     cfg!(not(debug_assertions))
 }
+
+pub fn hello_world() -> String {
+    "Hello, world!".into()
+}
